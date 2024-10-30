@@ -1,0 +1,26 @@
+#ibamu-header {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.ibamu-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.ibamu-link {
+    display: table;
+    margin: 0 auto 10px;
+}
+.ibamu-text {
+    font-size: 14px;
+    margin: 10px auto;
+    color: #434149
+}
+.button.button-primary {
+    background: #5533FF;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.button.button-primary:hover {
+    background: #775CFF;
+}

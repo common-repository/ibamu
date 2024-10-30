@@ -1,0 +1,399 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+
+:root {
+
+  /* Purple */
+  --primary-dark: #3013BF;
+  --primary-medium: #5533FF;
+  --primary-medium-hover: #775CFF;
+  --primary-light: #A3B2FF;  /* Green */
+  --secondary-dark: #13B27D;
+  --secondary-medium: #00E599;
+  --secondary-medium-hover: #33EAAD;
+  --secondary-light: #A3FFE0;  /* Orange */
+  --tertiary-dark: #BF7300;
+  --tertiary-medium: #FFA31A;
+  --tertiary-medium-hover: #FFB548;
+  --tertiary-light: #FFDAA4;  /* Neutral */
+  --neutral-light: #E5E9FF;
+  --neutral-grey: #FFFFFF;  /* Black */
+  --black: #24262B;
+  --dark-grey: #858FA0;
+  --light-grey: #DADDE1;  /* Notifications */
+  --error-light: #FEDCDC;
+  --error-medium: #FA5252;
+  --success-light: #CDEDE4;
+  --success-medium: #05A677;
+  --warning-light: #FFDAA4;
+  --warning-medium: #FFA31A;
+}
+
+u.tertiary {
+  -webkit-text-decoration-color: var(--tertiary-medium);
+  text-decoration-color: var(--tertiary-medium);
+}
+
+.lawwwing-wrapper {
+  font-family: 'Nunito', Helvetica, Arial, sans-serif;
+  margin-left: -20px;
+}
+
+.lawwwing-wrapper h1, .lawwwing-wrapper h2, .lawwwing-wrapper h3, .lawwwing-wrapper h4, .lawwwing-wrapper h5, .lawwwing-wrapper h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.lawwwing-wrapper h1 {
+  font-size: 32px;
+  line-height: 115%;
+  font-weight: 700;
+}
+
+.lawwwing-header {
+  width: 100%;
+  background-color: var(--primary-medium);
+}
+
+.lawwwing-logo {
+  padding: 10px 20px;
+}
+
+.lawwwing-content {
+  padding: 20px;
+}
+
+.lawwwing-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.lawwwing-plan-name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.lawwwing-plan-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.lawwwing-plan-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 0;
+  margin-right: 1rem;
+  border-radius: 30px 30px 0px 0px;
+  -webkit-box-shadow: 0px 2px 20px rgb(0 0 0 / 10%);
+  box-shadow: 0px 2px 20px rgb(0 0 0 / 10%);
+}
+
+@media screen and (max-width:900px) {
+  .lawwwing-plan-card {
+    width: 100%;
+    margin-top: 1rem;
+    margin-right: 0rem;
+  }
+
+  .lawwwing-plan-card-bottom-right {
+    padding-left: 0;
+  }
+
+}
+
+.lawwwing-plan-card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 30px 30px 0px 0px;
+  background-color: var(--neutral-light);
+  padding: 0px 20px;
+}
+
+.lawwwing-plan-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  color: var(--dark-grey);
+  padding: 12px 24px 24px 24px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.lawwwing-button-wrapper {
+  padding: 0px 20px 20px 20px;
+}
+
+.lawwwing-plan-include-list {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.lawwwing-plan-include-extra {
+  color: var(--primary-dark);
+  font-weight: bold;
+}
+
+.lawwwing-include-extra-list {
+  margin-left: 15px;
+}
+
+.lawwwing-include-extra-list li {
+  list-style: disc;
+  color: black;
+  font-size: 14px;
+}
+
+.lawwwing-bullet-element {
+  margin: 5px 0px;
+  padding-left: 30px;
+  font-size: 16px;
+  color: black;
+}
+
+.lawwwing-bullet-element > i {
+  margin-left: -30px;
+  margin-right: 10px;
+}
+
+.lawwwing-extra-element {
+  font-size: 14px;
+  color: var(--dark-grey)
+}
+
+.lawwwing-plans-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: white;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--neutral-light);
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.lawwwing-plans-wrapper p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.lawwwing-plans-wrapper .lawwwing-plan:not(:first-child) {
+  margin-left: 20px;
+}
+
+.lawwwing-plans-wrapper .lawwwing-plan {
+  padding: 12px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lawwwing-plans-wrapper .lawwwing-plan.discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lawwwing-plans-wrapper .lawwwing-plan .lawwwing-plan-price {
+  margin: 0;
+  margin-top: auto;
+  color: black;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.lawwwing-plans-wrapper .lawwwing-plan .lawwwing-plan-discount {
+  font-size: 14px;
+  color: #fff;
+  padding: 4px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#FFA31A), to(#ff3187)) !important;
+  background: -o-linear-gradient(left, #FFA31A, #ff3187) !important;
+  background: linear-gradient(90deg, #FFA31A, #ff3187) !important;
+  font-weight: bold;
+  text-align: center;
+  background: white;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.lawwwing-plans-wrapper .lawwwing-plan .lawwwing-plan-price .lawwwing-plan-period {
+  font-size: 12px;
+}
+
+.lawwwing-button-wrapper {
+  background-color: white;
+}
+
+.lawwwing-button-wrapper > a {
+  width: 100%;
+  max-width: inherit;
+  padding: 10px 0px;
+}
+
+.lawwwing-primary {
+  color: var(--primary-medium);
+}
+
+.lawwwing-secondary {
+  color: var(--secondary-medium);
+}
+
+.lawwwing-tertiary {
+  color: var(--tertiary-medium);
+}
+
+.lawwwing-plan-subtitle {
+  color: var(--neutral-dark);
+  font-size: 14px;
+}
+
+.lawwwing-content strong {
+  font-weight: 700;
+  color: var(--primary-medium);
+}
+
+.lawwwing-bullet-element i.fa-check-circle {
+  color: var(--secondary-dark);
+}
+
+.lawwwing-bullet-element i.fa-circle-xmark {
+  color: var(--tertiary-medium);
+}
+
+.lawwwing-text {
+  font-size: 16px;
+}
+
+#ibamu_api_key, #ibamu_widget_uuid {
+  line-height: 40px;
+  width: 80%;
+}
+
+.lawwwing-row th {
+  width: 70px;
+}
+
+.lawwwing-configuration-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.lawwwing-configuration-title {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.lawwwing-configuration-title h1 {
+  margin: 0;
+}
+
+.lawwwing-configuration-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.lawwwing-configuration-form-wrapper .lawwwing-configuration-form {
+  width: 45%;
+  border-right: 1px solid black;
+  padding-right: 2rem;
+}
+
+.lawwwing-configuration-form-wrapper .lawwwing-configuration-extra {
+  width: 45%;
+  padding-left: 2rem;
+}
+
+.lawwwing-configuration-form-wrapper .lawwwing-configuration-extra ul {
+  margin-left: 15px;
+}
+
+.lawwwing-configuration-form-wrapper .lawwwing-configuration-extra li {
+  list-style: disc;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 0px;
+  color: black;
+}
+
+.lawwwing-configuration-form-wrapper .lawwwing-configuration-extra .lawwwing-configuration-badges {
+  padding-top: 1rem;
+}
+
+.lawwwing-configuration-form-wrapper .lawwwing-configuration-extra .lawwwing-configuration-badges img {
+  vertical-align: middle;
+  padding: 0 1rem;
+}
+
+@media screen and (max-width:900px) {
+  .lawwwing-configuration-form-wrapper .lawwwing-configuration-form {
+    width: 100%;
+    border-right: 0;
+    padding-right: 0;
+  }
+
+  .lawwwing-configuration-form-wrapper .lawwwing-configuration-extra {
+    width: 100%;
+    padding-left: 0;
+  }
+
+}
+
+/* Override wp button */
+[data-style="lw-custom-submit"] {
+  font-family: 'Nunito Sans', Helvetica, Arial, sans-serif !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+  padding: 2px !important;
+  background-color: var(--primary-medium) !important;
+  color: white !important;
+  border: 1px solid var(--primary-medium) !important;
+}
+
+[data-style="lw-custom-submit"]:hover {
+  background-color: var(--primary-medium-hover) !important;
+  color: white !important;
+  border: 1px solid var(--primary-medium) !important;
+}
